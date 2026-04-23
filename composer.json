@@ -1,12 +1,8 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "demers94/laravel-inertia-react-starter-kit",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": [
-        "laravel",
-        "framework"
-    ],
+    "description": "Custom-made starter kit for Laravel / Inertia / React, with Coss UI components",
     "license": "MIT",
     "require": {
         "php": "^8.3",
