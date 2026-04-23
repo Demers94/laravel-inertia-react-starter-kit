@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import { UserIcon } from 'lucide-react';
 
 export default function Welcome() {
     return (
@@ -6,7 +7,9 @@ export default function Welcome() {
             <h1 className="text-4xl font-bold">React / Inertia / Tailwind</h1>
 
             <div className="flex flex-col items-center gap-4">
-                <Button>Regular</Button>
+                <Button>
+                    Regular <UserIcon />
+                </Button>
                 <Button variant="outline">Outline</Button>
                 <Button variant="secondary">Secondary</Button>
                 <Button variant="destructive">Destructive</Button>
