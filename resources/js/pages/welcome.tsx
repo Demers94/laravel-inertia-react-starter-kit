@@ -1,14 +1,23 @@
 import { Button } from '@/components/ui/button';
+import { toastManager } from '@/components/ui/toast';
 import { UserIcon } from 'lucide-react';
 
 export default function Welcome() {
+    function showToast() {
+        toastManager.add({
+            title: 'Toast title',
+            description: 'Lorem ipsum dolor sit amet.',
+            type: 'success',
+        });
+    }
+
     return (
         <div className="space-y-8 py-8 text-center">
             <h1 className="text-4xl font-bold">React / Inertia / Tailwind</h1>
 
             <div className="flex flex-col items-center gap-4">
-                <Button>
-                    Regular <UserIcon />
+                <Button onClick={() => showToast()}>
+                    Show the toast <UserIcon />
                 </Button>
                 <Button variant="outline">Outline</Button>
                 <Button variant="secondary">Secondary</Button>

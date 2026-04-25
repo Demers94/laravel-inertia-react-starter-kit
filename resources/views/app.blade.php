@@ -7,7 +7,7 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         @viteReactRefresh
-        @vite(['resources/css/app.css', 'resources/js/app.ts'])
+        @vite(['resources/css/app.css', 'resources/js/app.tsx'])
 
         <x-inertia::head />
     </head>
